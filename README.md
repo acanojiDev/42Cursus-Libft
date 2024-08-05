@@ -22,3 +22,40 @@
     <td>This project consists of programming a library in C with existing functions to use in future projects, understanding how they work, how to implement them and what to do with them.</td>
   </tr>
 </table>
+
+## Funciones de libc a entregar / libc functions to deliver
+### Obligatorias / Mandatory
+<table>
+  <tr>
+    <td>isalpha <br> isdigt <br> isalnum <br> isascii <br> isprint <br> strlen <br>memset <br>bzero <br> memcpy <br> memmove <br>strclpy <br>strlcat</td>
+    <td>toupper <br> tolower <br> strchr <br> strrchr <br> strncmp <br> memchr <br> memcmp <br> strnstr <br> atoi </td>
+    <td>Using malloc() <br> calloc <br> strdup</td>
+    <td>ft_substr<br> ft_strjoin <br> ft_strtrim <br> ft_split <br> ft_itoa ft_strmapi <br> ft_striteri <br> ft_putchar_fd <br> ft_putendl_fd <br> ft_putnbr_fd <br> </td>
+  </tr>
+</table>
+
+### Bonus
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
