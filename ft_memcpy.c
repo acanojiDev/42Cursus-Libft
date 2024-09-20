@@ -6,12 +6,11 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 15:14:21 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/09/12 16:37:28 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/09/20 13:44:46 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

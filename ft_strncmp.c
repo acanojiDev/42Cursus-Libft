@@ -1,25 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/11 15:00:03 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/09/20 13:44:04 by acano-ji         ###   ########.fr       */
+/*   Created: 2024/09/20 13:26:19 by acano-ji          #+#    #+#             */
+/*   Updated: 2024/09/20 15:35:07 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
+	while (n > 0 && *s1 != '\0' && *s2 != '\0')
 	{
-		i++;
+		if (*s1 != *s2)
+			return (*s1 - *s2);
+		s1++;
+		s2++;
+		n--;
 	}
-	return (i);
+	if (n == 0)
+		return (0);
+	return (*s1 - *s2);
 }

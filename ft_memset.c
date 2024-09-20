@@ -6,12 +6,11 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:27:32 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/09/12 15:11:52 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/09/20 13:44:09 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 void	*ft_memset(void *s, int c, size_t n)
 {

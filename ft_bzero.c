@@ -6,11 +6,11 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 12:52:41 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/09/12 15:09:57 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/09/20 13:45:00 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <strings.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 15:00:03 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/09/17 17:46:17 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/09/20 13:43:51 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <ctype.h>
+#include "libft.h"
 
 int	ft_tolower(int c)
 {
