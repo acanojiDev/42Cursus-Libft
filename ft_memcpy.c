@@ -6,7 +6,7 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 15:14:21 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/09/20 13:44:46 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/09/23 16:28:59 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
-	while (dest == src || !n)
+	if (dest == src || n == 0)
 	{
 		return (dest);
 	}
-	while (n > i)
+	while (i < n)
 	{
 		d[i] = s[i];
 		i++;

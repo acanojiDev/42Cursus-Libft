@@ -6,7 +6,7 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 12:37:58 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/09/20 13:43:56 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/09/23 16:47:19 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strrchr(const char *s, int c)
 	char	*last_ocurrence;
 
 	last_ocurrence = NULL;
-	while (s != '\0')
+	while (*s != '\0')
 	{
 		if (*s == (char)c)
 		{
