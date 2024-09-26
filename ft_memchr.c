@@ -6,7 +6,7 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 14:56:47 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/09/23 17:13:23 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/09/26 11:36:50 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	strs = (unsigned char *)s;
-	while (strs[i] != '\0' && i < n) //hacer con punteros
+	while (strs[i] != '\0' && i < n)
 	{
 		if (strs[i] == (unsigned char) c)
 			return (&strs[i]);
