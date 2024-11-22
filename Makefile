@@ -5,7 +5,7 @@ NAME = libft.a
 AR = ar rcs
 RM = rm -f
 
-#Archivos fuentes
+#Archivos fuentes de las funciones principales
 SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c \
 	ft_strlcpy.c ft_strlcat.c ft_toupper.c ft_tolower.c ft_strchr.c \
@@ -14,8 +14,13 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 	ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putendl_fd.c \
 	ft_putnbr_fd.c ft_putstr_fd.c
 
-#Archivos objeto para convertir todos los .c en archivos .o (archivos objeto)
+#Archivos fuentes de las funciones bonus
+
+BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c
+
+#Archivos objeto de funciones principales Y BONUS para convertir todos los .c en archivos .o (archivos objeto)
 OBJ = $(SRC:.c=.o)
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 #Regla principal que se llama por defecto
 all: $(NAME)
@@ -24,13 +29,17 @@ all: $(NAME)
 $(NAME) : $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 
+#Regla para compilar los bonus
+bonus: $(OBJ) $(BONUS_OBJ)
+	$(AR) $(NAME) $(BONUS_OBJ)
+
 #Regla para compilar cada archivo .c en su correspondiente archivo .o
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 #Regla para limpiar los archivos de objeto
 clean:
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(BONUS_OBJ)
 
 #Regla para limpiar todo
 fclean: clean
@@ -38,3 +47,6 @@ fclean: clean
 
 #Recompilar todo
 re: fclean all
+
+#Añadimos el phony para aquellas reglas que no generan archivos directamente y asin librarnos de conflictos
+.PHONY: all bonus clean fclean re

@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/15 14:46:07 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/11/22 11:31:59 by acano-ji         ###   ########.fr       */
+/*   Created: 2024/11/22 13:10:33 by acano-ji          #+#    #+#             */
+/*   Updated: 2024/11/22 13:23:31 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+int	ft_lstsize(t_list *lst)
 {
-	t_list	*new;
+	int	i;
 
-	new = (t_list *)malloc(sizeof(t_list));
-	if(!new)
-		return (NULL);
-	new ->content = content;
-	new -> next = NULL;
-	return (new);
+	i = 0;
+	while (lst)
+	{
+		lst = lst->next;
+		i++;
+	}
+	return (i);
 }
+/* lst vanza al siguiente nodo de la lista mientras haya*/
