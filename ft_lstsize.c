@@ -6,7 +6,7 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 13:10:33 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/11/22 13:23:31 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:34:44 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-/* lst vanza al siguiente nodo de la lista mientras haya*/
