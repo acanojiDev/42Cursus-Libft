@@ -6,7 +6,7 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 18:18:02 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/11/15 14:49:48 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:55:44 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,4 +58,3 @@ char	**ft_split(char const *s, char c)
 	lst[i] = NULL;
 	return (lst);
 }
-/*el free al main, liberar si falla substr.*/

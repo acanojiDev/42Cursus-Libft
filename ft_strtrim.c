@@ -6,7 +6,7 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 16:12:44 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/11/10 17:01:30 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:57:03 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ char	*ft_strtrim(const char *s1, const char *set)
 	start = 0;
 	if (!s1 || !set)
 		return (NULL);
-	end = strlen(s1);
+	end = ft_strlen(s1);
 	while (s1[start] && is_in_set(s1[start], set))
 		start++;
 	while (end > start && is_in_set(s1[end - 1], set))

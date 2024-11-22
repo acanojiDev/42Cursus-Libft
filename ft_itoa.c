@@ -6,7 +6,7 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 11:36:05 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/11/08 12:46:47 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:55:15 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,20 +70,3 @@ char	*ft_itoa(int n)
 	fill_result(result, num, len);
 	return (result);
 }
-
-/**
- * Función que calcula la longitud total del numero que le pasamos
- * Tenemos que tener en cuenta:
- primero hacer una variable contador para que cuente las
- veces queitera y saber el total de digitos
- * 1) Caundo sea negativo:
-
-que la variable contador sume uno y ya tendremos contado
-el signo negativo q nos pide la funcion
-   2) Cuando sea 0 que la variable contador sume uno para
-    saber que es positivo y apartir de ahi:
-   3) Dividdir  entre 10 al numero para ir sumando el
-    total de digitos y ir sumando
-   contador y alfinal devolver contador
-   a ascii que es lo mismo que a string.
- */

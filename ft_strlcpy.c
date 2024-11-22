@@ -6,7 +6,7 @@
 /*   By: acano-ji <acano-ji@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/20 12:15:47 by acano-ji          #+#    #+#             */
-/*   Updated: 2024/10/25 09:50:10 by acano-ji         ###   ########.fr       */
+/*   Updated: 2024/11/22 15:57:52 by acano-ji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		dest[i] = '\0';
 	return (src_len);
 }
-/*
-1. **Calcular la longitud de `src`**:
-   - Se recorre `src` para calcular su longitud (`src_len`).
-
-2. **Caso especial `size == 0`**:
-   - Si `size` es 0,
-	no se copia nada a `dest` y se devuelve la longitud de `src`.
-
-3. **Copiar caracteres**:
-   - Se copian hasta `size - 1` caracteres de `src` a `dest`.
-   - Se asegura que `dest` esté terminado en nulo (`\0`).
-
-4. **Devolver la longitud de `src`**:
-   - La función devuelve la longitud de `src`,
-	independientemente de cuántos caracteres se hayan copiado.*/
