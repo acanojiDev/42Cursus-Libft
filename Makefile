@@ -17,7 +17,7 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 #Archivos fuentes de las funciones bonus
 
 BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c \
-	ft_lstadd_back.c ft_lstdelone.c
+	ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c \
 
 #Archivos objeto de funciones principales Y BONUS para convertir todos los .c en archivos .o (archivos objeto)
 OBJ = $(SRC:.c=.o)
