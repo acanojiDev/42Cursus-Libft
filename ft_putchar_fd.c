@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * ft_putchar_fd - Escribe un carácter en un descriptor de archivo.
+ * @c: El carácter a escribir.
+ * @fd: El descriptor de archivo en el que se escribirá el carácter.
+ *
+ * Esta función toma un carácter `c` y lo escribe en el descriptor de archivo
+ * especificado por `fd`. Utiliza la función `write` para realizar la escritura.
+ *
+ * Return: Nada.
+ */
+
 void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);

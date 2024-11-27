@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/**
+ * ft_split - Divide una cadena en subcadenas utilizando un delimitador.
+ * @s: La cadena a dividir.
+ * @c: El carácter delimitador.
+ *
+ * Esta función toma una cadena `s` y la divide en subcadenas cada vez que
+ * encuentra el carácter delimitador `c`. Las subcadenas resultantes se almacenan
+ * en un array de cadenas, que termina con un puntero NULL. Si la asignación de
+ * memoria falla, la función devuelve NULL.
+ *
+ * Return: Un array de cadenas resultante de dividir `s` por el delimitador `c`, o NULL si hay un error.
+ */
+
 static size_t	ft_countwords(char const *s, char c)
 {
 	size_t	count;
@@ -57,4 +70,39 @@ char	**ft_split(char const *s, char c)
 	}
 	lst[i] = NULL;
 	return (lst);
+}
+int	main(void)
+{
+    char	**result;
+    int		i;
+
+    // Llamada a ft_split para dividir la cadena "Hola mundo esto es una prueba" usando el espacio como delimitador
+    result = ft_split("Hola mundo esto es una prueba", ' ');
+    if (!result)
+    {
+        // Si ft_split devuelve NULL, se imprime un mensaje de error y se termina el programa
+        printf("Error al dividir la cadena.\n");
+        return (1);
+    }
+
+    // Imprimir las subcadenas resultantes
+    i = 0;
+    while (result[i])
+    {
+        printf("Subcadena %d: %s\n", i, result[i]);
+        i++;
+    }
+
+    // Liberar la memoria asignada por ft_split
+    i = 0;
+    while (result[i])
+    {
+        // Liberar cada subcadena individualmente
+        free(result[i]);
+        i++;
+    }
+    // Liberar el array de cadenas
+    free(result);
+
+    return (0);
 }

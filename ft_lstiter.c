@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * ft_lstiter - Aplica una función a cada elemento de una lista enlazada.
+ * @lst: Un puntero al primer nodo de la lista.
+ * @f: La función a aplicar a cada elemento de la lista.
+ *
+ * Esta función recorre una lista enlazada y aplica la función `f` al contenido
+ * de cada nodo.
+ *
+ * Return: Nada.
+ */
+
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*tmp;

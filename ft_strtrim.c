@@ -22,6 +22,18 @@ static int	is_in_set(char c, const char *set)
 	}
 	return (0);
 }
+/**
+ * ft_strtrim - Elimina los caracteres especificados desde el inicio y el final de una cadena.
+ * @s1: La cadena original a recortar.
+ * @set: La cadena que contiene los caracteres a eliminar.
+ *
+ * Esta función toma una cadena `s1` y elimina todos los caracteres que aparecen en `set`
+ * desde el inicio y el final de `s1`. La función devuelve una nueva cadena recortada
+ * que no contiene los caracteres especificados en `set` al principio ni al final.
+ * Si `s1` o `set` son NULL, la función devuelve NULL.
+ *
+ * Return: La cadena recortada o NULL si hay un error.
+ */
 
 char	*ft_strtrim(const char *s1, const char *set)
 {

@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+ * ft_strjoin - Une dos cadenas en una nueva cadena.
+ * @s1: La primera cadena.
+ * @s2: La segunda cadena.
+ *
+ * Esta función toma dos cadenas `s1` y `s2` y las une en una nueva cadena.
+ * La nueva cadena es el resultado de concatenar `s1` y `s2`.
+ * Si la asignación de memoria para la nueva cadena falla, la función devuelve NULL.
+ *
+ * Return: La nueva cadena resultante de la concatenación de `s1` y `s2`, o NULL si hay un error.
+ */
+
 char	*ft_strjoin(const char *s1, const char *s2)
 {
 	size_t	i;

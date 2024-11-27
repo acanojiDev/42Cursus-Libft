@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * ft_isalpha - Verifica si un carácter es una letra del alfabeto.
+ * @c: El carácter a verificar.
+ *
+ * Esta función verifica si el carácter `c` es una letra del alfabeto,
+ * ya sea en minúscula ('a' a 'z') o en mayúscula ('A' a 'Z').
+ *
+ * Return: 1 si el carácter es una letra del alfabeto, 0 en caso contrario.
+ */
+
 int	ft_isalpha(int c)
 {
 	return (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'));

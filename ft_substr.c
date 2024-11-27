@@ -12,6 +12,22 @@
 
 #include "libft.h"
 
+/**
+ * ft_substr - Extrae una subcadena de una cadena dada.
+ * @s: La cadena de la cual se extraerá la subcadena.
+ * @start: La posición inicial en la cadena original desde donde comenzar la extracción.
+ * @len: La longitud máxima de la subcadena a extraer.
+ *
+ * Esta función toma una cadena `s` y crea una nueva cadena que es una subcadena
+ * de `s`, comenzando desde el índice `start` y con una longitud máxima de `len`.
+ * Si `start` es mayor o igual a la longitud de `s`, la función devuelve una cadena vacía.
+ * Si `len` es mayor que la cantidad de caracteres restantes en `s` desde `start`,
+ * la longitud de la subcadena se ajusta para no exceder los límites de `s`.
+ * La función devuelve la subcadena extraída o NULL si ocurre un error de asignación de memoria.
+ *
+ * Return: La subcadena extraída o NULL si hay un error.
+ */
+
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*substr;

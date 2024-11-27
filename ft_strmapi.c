@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/**
+ * ft_strmapi - Aplica una función a cada carácter de una cadena para crear una nueva cadena.
+ * @s: La cadena original.
+ * @f: La función a aplicar a cada carácter de la cadena.
+ *
+ * Esta función toma una cadena `s` y aplica la función `f` a cada carácter de la cadena,
+ * pasando el índice del carácter y el propio carácter como argumentos a la función `f`.
+ * La función devuelve una nueva cadena resultante de aplicar `f` a cada carácter de `s`.
+ * Si la asignación de memoria para la nueva cadena falla, la función devuelve NULL.
+ *
+ * Return: La nueva cadena creada al aplicar `f` a cada carácter de `s`, o NULL si hay un error.
+ */
+
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	char			*result;

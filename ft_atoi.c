@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * ft_atoi - Convierte una cadena de caracteres a un número entero.
+ * @nptr: La cadena de caracteres a convertir.
+ *
+ * Esta función toma una cadena de caracteres `nptr` y la convierte en un número entero.
+ * La conversión ignora los espacios en blanco iniciales y maneja un signo opcional ('+' o '-').
+ * La función procesa los caracteres numéricos hasta que encuentra un carácter no numérico.
+ *
+ * Return: El número entero resultante de la conversión.
+ */
+
 int	ft_atoi(const char *nptr)
 {
 	int	i;

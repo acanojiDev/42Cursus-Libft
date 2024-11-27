@@ -12,6 +12,16 @@
 
 #include "libft.h"
 
+/**
+ * ft_lstsize - Cuenta el número de elementos en una lista enlazada.
+ * @lst: Un puntero al primer elemento de la lista.
+ *
+ * Esta función recorre una lista enlazada y cuenta el número de elementos
+ * que contiene. La lista está compuesta por nodos de tipo `t_list`.
+ *
+ * Return: El número de elementos en la lista.
+ */
+
 int	ft_lstsize(t_list *lst)
 {
 	int	i;

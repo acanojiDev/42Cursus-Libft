@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+ * ft_putstr_fd - Escribe una cadena de caracteres en un descriptor de archivo.
+ * @s: La cadena de caracteres a escribir.
+ * @fd: El descriptor de archivo en el que se escribirá la cadena.
+ *
+ * Esta función toma una cadena de caracteres `s` y la escribe carácter por carácter
+ * en el descriptor de archivo especificado por `fd`. Utiliza la función `write` para
+ * realizar la escritura.
+ *
+ * Return: Nada.
+ */
+
 void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;

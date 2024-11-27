@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * ft_bzero - Establece a cero un bloque de memoria.
+ * @s: El bloque de memoria a establecer a cero.
+ * @n: El número de bytes a establecer a cero.
+ *
+ * Esta función toma un bloque de memoria apuntado por `s` y establece
+ * los primeros `n` bytes del bloque de memoria a cero.
+ *
+ * Return: Nada.
+ */
+
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*strs;

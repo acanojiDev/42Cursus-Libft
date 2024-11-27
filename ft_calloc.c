@@ -12,6 +12,18 @@
 
 #include "libft.h"
 
+/**
+ * ft_calloc - Asigna memoria para un array de elementos y la inicializa a cero.
+ * @count: El número de elementos a asignar.
+ * @size: El tamaño de cada elemento.
+ *
+ * Esta función asigna memoria para un array de `count` elementos, cada uno de
+ * `size` bytes de longitud, y la inicializa a cero. Utiliza `malloc` para la
+ * asignación de memoria y `ft_bzero` para la inicialización.
+ *
+ * Return: Un puntero a la memoria asignada, o NULL si la asignación falla.
+ */
+
 void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*tmp;

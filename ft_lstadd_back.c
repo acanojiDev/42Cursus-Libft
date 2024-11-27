@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * ft_lstadd_back - Añade un nuevo nodo al final de una lista enlazada.
+ * @lst: Un puntero al puntero del primer nodo de la lista.
+ * @new: El nuevo nodo a añadir al final de la lista.
+ *
+ * Esta función añade el nodo `new` al final de la lista enlazada `lst`.
+ * Si `new` es NULL, la función no hace nada.
+ *
+ * Return: Nada.
+ */
+
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*temp;

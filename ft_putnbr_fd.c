@@ -12,6 +12,19 @@
 
 #include "libft.h"
 
+/**
+ * ft_putnbr_fd - Escribe un número entero en un descriptor de archivo.
+ * @n: El número entero a escribir.
+ * @fd: El descriptor de archivo en el que se escribirá el número.
+ *
+ * Esta función toma un número entero `n` y lo escribe en el descriptor de archivo
+ * especificado por `fd`. Utiliza recursión para manejar cada dígito del número.
+ * Si el número es negativo, escribe un signo menos y luego el valor absoluto del número.
+ * Si el número es el valor mínimo de un entero (`INT_MIN`), escribe "-2147483648".
+ *
+ * Return: Nada.
+ */
+
 void	ft_putnbr_fd(int n, int fd)
 {
 	if (n == INT_MIN)

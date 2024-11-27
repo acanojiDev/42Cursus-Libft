@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+/**
+ * ft_strnstr - Encuentra una subcadena dentro de una cadena hasta un tamaño dado.
+ * @big: La cadena en la que se buscará la subcadena.
+ * @little: La subcadena a buscar.
+ * @len: El número máximo de caracteres a buscar.
+ *
+ * Esta función busca la primera aparición de la subcadena `little` en la cadena `big`,
+ * pero no más allá de los primeros `len` caracteres de `big`. Los caracteres nulos
+ * terminadores no se comparan. Si `little` es una cadena vacía, la función devuelve `big`.
+ * Si `little` no se encuentra en los primeros `len` caracteres de `big`, la función devuelve NULL.
+ *
+ * Return: Un puntero a la primera aparición de `little` en `big`, o NULL si no se encuentra.
+ */
+
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;

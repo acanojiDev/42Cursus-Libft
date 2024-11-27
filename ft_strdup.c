@@ -12,6 +12,17 @@
 
 #include "libft.h"
 
+/**
+ * ft_strdup - Duplica una cadena.
+ * @s1: La cadena a duplicar.
+ *
+ * Esta función toma una cadena `s1` y asigna memoria para una nueva cadena
+ * que es una copia de `s1`. La nueva cadena es terminada en nulo ('\0').
+ * Si la asignación de memoria falla, la función devuelve NULL.
+ *
+ * Return: Un puntero a la nueva cadena duplicada, o NULL si hay un error.
+ */
+
 char	*ft_strdup(const char *s1)
 {
 	int		i;
